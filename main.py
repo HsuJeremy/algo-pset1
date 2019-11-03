@@ -3,6 +3,8 @@ import json
 with open("responses.json") as file:
 	data = json.load(file)
 
+list_data = [i for i in data.values()]
+
 # Each JSON entry (i.e. person) is a dictionary
 # Calculate compatibility score for two people
 def score(person1, person2): 
@@ -29,4 +31,4 @@ def score(person1, person2):
 
 	return gender_score * year_score * abs(1 / (question_score / 100 - f_score + 1))
 
-print(score(data["0"], data["13"]))
+# print(score(data["0"], data["13"]))
