@@ -87,7 +87,7 @@ def pair():
     for i in range(size):
         rating_rankings[i].sort(key=lambda x: x[1], reverse=True) 
 
-    print(rating_rankings)
+    # print(rating_rankings)
 
     # # Perform the matching
     # pairs = {}
@@ -108,7 +108,7 @@ def pair():
     #             pairs[k] = [scr, i]
 
 
-pair() 
+# pair()
 
 
 
